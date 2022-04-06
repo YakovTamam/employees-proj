@@ -1,6 +1,6 @@
 # employees-proj
 
-1) First you need to take "crud-db" and "crud-proj" and put inside "C:\xampp\htdocs"
+1) First you need to download "crud-db" and "crud-proj" and put inside "C:\xampp\htdocs"
 
 2) turn on xampp Apache and MySQL
 
