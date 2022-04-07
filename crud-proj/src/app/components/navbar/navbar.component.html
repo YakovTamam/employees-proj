@@ -2,7 +2,18 @@
     <div class="container">
       <a class="navbar-brand" href="#">Crud</a>
         <form>
-          <input class="form-control" type="text" placeholder="Search">
+          <mat-form-field>
+            <input
+             type="text"
+             [matAutocomplete]="auto"
+             [formControl]="myControl" matInput 
+            />
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let name of filteredOption | async" [value]="name">
+                {{name}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
         </form>
       </div>
   </nav>
