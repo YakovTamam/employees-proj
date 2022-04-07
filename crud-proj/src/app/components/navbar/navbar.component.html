@@ -6,7 +6,10 @@
             <input
              type="text"
              [matAutocomplete]="auto"
-             [formControl]="myControl" matInput 
+             [formControl]="myControl" matInput
+             class=""
+             placeholder="Search"
+             style="background-color: aliceblue; padding: 5px;"
             />
             <mat-autocomplete #auto="matAutocomplete">
               <mat-option *ngFor="let name of filteredOption | async" [value]="name">
